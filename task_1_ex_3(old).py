@@ -20,7 +20,6 @@ Hint: use argparse module for parsing arguments from CLI
 """
 import argparse
 
-
 parser = argparse.ArgumentParser()
 parser.add_argument('expression', nargs='+')
 operations = ['+', '-']
@@ -47,7 +46,7 @@ def check_formula(args):
                     elif (m in operations) and (n in operations):
                         raise NotImplementedError
                     else:
-                        n=m
+                        n = m
                 else:
                     # 4 исключение аргумент не + ни - ни цифра
                     raise NotImplementedError

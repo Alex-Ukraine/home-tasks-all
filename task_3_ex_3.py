@@ -42,18 +42,18 @@ def finder(path, pattern):
     """
     for root, dirs, files in os.walk(path):
         for file in files:
-            if fnmatch.fnmatch(file, pattern): #.strip("'")):
+            if fnmatch.fnmatch(file, pattern):  # .strip("'")):
                 yield os.path.abspath(os.path.join(root, file))
 
 
 def display_result(file_paths):
     """Displays founded file paths and file's permissions."""
     # Your code
-    #print('...')
-    n=0
+    # print('...')
+    n = 0
     for file in file_paths:
-        n+=1
-        mode=os.stat(file).st_mode
+        n += 1
+        mode = os.stat(file).st_mode
         print(file, stat.filemode(mode))
     print("Found {} file(s).".format(n))
 

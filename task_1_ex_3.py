@@ -20,12 +20,13 @@ Hint: use argparse module for parsing arguments from CLI
 """
 import argparse
 
-
 parser = argparse.ArgumentParser()
 parser.add_argument('user_input', nargs='+')
+
+
 def check_formula(user_input):
     try:
-        plus=''.join(user_input[0])
+        plus = ''.join(user_input[0])
         plus = plus.split('+')
         aggr = 0
         for p in plus:
@@ -33,7 +34,7 @@ def check_formula(user_input):
                 aggr += int(p)
             else:
                 minus = p.split('-')
-                aggr += 2*int(minus[0])
+                aggr += 2 * int(minus[0])
                 for k in minus:
                     aggr -= int(k)
         return (True, aggr)

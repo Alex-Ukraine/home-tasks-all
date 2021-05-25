@@ -15,7 +15,6 @@ import argparse
 import operator
 import math
 
-
 parser = argparse.ArgumentParser()
 parser.add_argument('expression', nargs='+')
 
@@ -32,7 +31,6 @@ def calculate(args):
             return eval(string)
         except:
             raise AttributeError
-
 
 
 def main():

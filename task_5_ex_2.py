@@ -17,11 +17,11 @@ Usage of loops is obligatory
 def arithm_progression_product(a1, t, n):
     for item in (a1, t, n):
         if type(item) is not int:
-            raise ValueError 
-    sum=1
-    #print(list(range(a1, a1+n*t, t)))
-    for number in range(a1, a1+n*t, t):
-        sum*=number; #print(sum)
+            raise ValueError
+    sum = 1
+    # print(list(range(a1, a1+n*t, t)))
+    for number in range(a1, a1 + n * t, t):
+        sum *= number;  # print(sum)
     return sum
 
-#print(arithm_progression_product(5, 3, 4))
+# print(arithm_progression_product(5, 3, 4))

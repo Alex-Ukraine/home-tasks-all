@@ -10,14 +10,14 @@ n = 128 = 10000000 result = 1
 
 
 def sum_binary_1(n: int):
-    if not ((type(n) is int) and n>0):
+    if not ((type(n) is int) and n > 0):
         return None
-    sum=0
+    sum = 0
 
-    #print('{0:b}'.format(n))
+    # print('{0:b}'.format(n))
 
     for x in '{0:b}'.format(n):
-        sum+=int(x)
+        sum += int(x)
     return sum
 
-#print(sum_binary_1(12))
+# print(sum_binary_1(12))

@@ -24,11 +24,11 @@ def chars_in_one(*strings):
 def chars_in_two(*strings):
     """characters that appear at least in two strings"""
     check(strings)
-    if len(strings)<2:
+    if len(strings) < 2:
         raise ValueError
     res = set()
     for index, x in enumerate(strings):
-        others = strings[ :index ] + strings[ index + 1: ]
+        others = strings[:index] + strings[index + 1:]
         res = res.union(set(x).intersection(chars_in_one(*others)))
     return res
 

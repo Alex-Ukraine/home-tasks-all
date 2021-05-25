@@ -16,15 +16,16 @@ from typing import List
 
 
 def product_array(num_list: List[int]) -> List[int]:
-    res=[]
+    res = []
     for index, digit in enumerate(num_list):
-        mult=1
-        middle=num_list[:]; del middle[index]
+        mult = 1
+        middle = num_list[:];
+        del middle[index]
         for d in middle:
-            mult*=d
+            mult *= d
         res.append(mult)
 
     return res
 
-#print(product_array([1, 2, 3, 0, 5, 8]))
-#print(product_array([1, 2, 3]))
+# print(product_array([1, 2, 3, 0, 5, 8]))
+# print(product_array([1, 2, 3]))

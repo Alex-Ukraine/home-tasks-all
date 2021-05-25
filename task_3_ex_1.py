@@ -19,14 +19,16 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('n', type=int, nargs=1)
 
+
 def calculate(n):
-    n=n[0]
-    if n>0:
-        return n**2
-    elif n<0:
-        return n*(-1)
-    elif n==0:
+    n = n[0]
+    if n > 0:
+        return n ** 2
+    elif n < 0:
+        return n * (-1)
+    elif n == 0:
         return 0
+
 
 def main():
     args = parser.parse_args()

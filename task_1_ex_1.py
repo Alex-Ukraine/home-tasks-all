@@ -25,11 +25,11 @@ def calculate(args):
     second = args.second[0]
 
     operators = {
-                '+' : operator.add,
-                '-' : operator.sub,
-                '*' : operator.mul,
-                '/' : operator.truediv,
-                  }
+        '+': operator.add,
+        '-': operator.sub,
+        '*': operator.mul,
+        '/': operator.truediv,
+    }
 
     if sign not in ['+', '-', '*', '/']:
         raise NotImplementedError

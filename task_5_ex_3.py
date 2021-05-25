@@ -13,18 +13,18 @@ For a progression, where a1 = 100, and t = 0.5, the sum of the first elements, g
 
 
 def sum_geometric_elements(a: float, t: float, lim: float) -> float:
-    #for item in (a, t, lim):
+    # for item in (a, t, lim):
     #    if not (type(item) is float): #or type(item) is int):
     #        raise ValueError
-    if not (a>0 and lim>0 and t>0 and t<1):
+    if not (a > 0 and lim > 0 and t > 0 and t < 1):
         raise ValueError
 
-    res=0
-    last=a
+    res = 0
+    last = a
 
     while last > lim:
-        res+=last; #print(res)
-        last*=t; #print(last)
+        res += last;  # print(res)
+        last *= t;  # print(last)
     return round(res, 3)
 
-#print(sum_geometric_elements(100.0, 0.5, 20))
+# print(sum_geometric_elements(100.0, 0.5, 20))

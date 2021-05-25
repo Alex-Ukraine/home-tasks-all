@@ -10,12 +10,12 @@ Example:
 
 
 def get_digits(*args):
-    res=[]
+    res = []
     for dig in args:
         if isinstance(dig, int):
             for char in str(dig):
                 res.append(int(char))
     return tuple(res)
 
-#print(get_digits(8717, 82911, 99))
-#print(get_digits('dfghfgh'))
+# print(get_digits(8717, 82911, 99))
+# print(get_digits('dfghfgh'))

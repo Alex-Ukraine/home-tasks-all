@@ -15,12 +15,12 @@ Use of 'functools' module is prohibited, you just need simple for loop.
 
 
 def sum_odd_numbers(n: int) -> int:
-    sum=0
-    if not ((type(n) is int) and n>0):
-        raise TypeError 
+    sum = 0
+    if not ((type(n) is int) and n > 0):
+        raise TypeError
     for char in str(n):
-        if int(char)%2==1:
-            sum+=int(char)
+        if int(char) % 2 == 1:
+            sum += int(char)
     return sum
 
-#print(sum_odd_numbers(True))
+# print(sum_odd_numbers(True))

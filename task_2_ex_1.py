@@ -19,26 +19,24 @@ python3 task3_1.py -W 56 -w 3 4 5 6 -n 4
 """
 import argparse
 
-
 parser = argparse.ArgumentParser()
 parser.add_argument('-W', nargs='?', type=int)
 parser.add_argument('-w', nargs='*', type=int)
-parser.add_argument('-n', nargs='?',type=int)
+parser.add_argument('-n', nargs='?', type=int)
 
 
 def bounded_knapsack(args):
     if (args.w is None) or (args.n is None) or (args.W is None):
         raise ValueError
     for i in args.w:
-        if i<0:
+        if i < 0:
             raise ValueError
-    if args.W<=0 or args.n<0 or (int(args.n) != len(args.w)):
+    if args.W <= 0 or args.n < 0 or (int(args.n) != len(args.w)):
         raise ValueError
 
-
-    args.W=int(args.W)
-    args.w=[int(i) for i in args.w]
-    args.n=int(args.n)
+    args.W = int(args.W)
+    args.w = [int(i) for i in args.w]
+    args.n = int(args.n)
 
     result = 0
 

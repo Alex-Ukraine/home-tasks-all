@@ -8,6 +8,6 @@ def combine_dicts(*args):
             if k not in list(ascii_lowercase):
                 raise KeyError
             if type(d[k]) is not int:
-                raise ValueError 
-            res[k]=res.get(k,0)+d.get(k, 0)
+                raise ValueError
+            res[k] = res.get(k, 0) + d.get(k, 0)
     return res

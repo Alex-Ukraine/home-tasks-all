@@ -1,6 +1,7 @@
 import collections
 import string
 
+
 def count_letters(some_string: str) -> dict:
     if type(some_string) is not str:
         raise TypeError

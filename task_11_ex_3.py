@@ -5,6 +5,7 @@ def call_once(func):
         else:
             cached.append(func(*args))
             return func(*args)
+
     return wrapper
 
 

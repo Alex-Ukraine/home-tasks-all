@@ -10,6 +10,7 @@ def enclosing_function():
     def inner_function():
         a = 'I am local variable!'
         print(a)
+
     inner_function()
 
 
@@ -23,6 +24,7 @@ def print_global():
     def inner_function():
         global a
         print(a)
+
     inner_function()
 
 
@@ -37,6 +39,7 @@ def print_enclosed():
     def inner_function():
         nonlocal a
         print(a)
+
     inner_function()
 
 

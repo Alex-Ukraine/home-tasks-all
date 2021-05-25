@@ -19,18 +19,18 @@ Examples:
 
 
 def split_by_index(string, indexes):
-    last=0
-    res=[]
+    last = 0
+    res = []
 
     for index in indexes:
         if isinstance(index, int) and index > last:
             res.append(string[last:index])
-            last=index
+            last = index
     if last < len(string):
         res.append(string[last:])
     return res
 
-#print(split_by_index("pythoniscool,isn'tit?", [6, 8, 8, -4, 0, "u", 12, 13, 18]))
-#split_by_index("no luck", [42])
-#split_by_index("no luck", [])
-#print(split_by_index("no luck", [2,7]))
+# print(split_by_index("pythoniscool,isn'tit?", [6, 8, 8, -4, 0, "u", 12, 13, 18]))
+# split_by_index("no luck", [42])
+# split_by_index("no luck", [])
+# print(split_by_index("no luck", [2,7]))

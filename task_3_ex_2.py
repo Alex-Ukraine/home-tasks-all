@@ -29,18 +29,19 @@ parser.add_argument('string', type=str, nargs=1)
 def from_roman_numerals(args):
     inp = args.string
     numval = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100}
-    sum=0
-    previous=''
+    sum = 0
+    previous = ''
     for char in inp[0]:
         if char in numval.keys():
-            if previous=='I' and char!='I':
-                sum-=2
-            sum+=numval[char]
-            previous=char
+            if previous == 'I' and char != 'I':
+                sum -= 2
+            sum += numval[char]
+            previous = char
         else:
             raise ValueError
     else:
         return sum
+
 
 def main():
     args = parser.parse_args()

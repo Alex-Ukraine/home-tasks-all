@@ -7,36 +7,29 @@ class Employee:
         self.__salary = salary
         self.__bonus = 0
 
-
     @property
     def name(self):
         return self.__name
-
 
     @name.setter
     def name(self, name):
         self.__name = name
 
-
     @property
     def salary(self):
         return self.__salary
-
 
     @salary.setter
     def salary(self, salary):
         self.__salary = salary
 
-
     @property
     def bonus(self):
         return self.__bonus
 
-
     @bonus.setter
     def bonus(self, bonus):
         self.__bonus += bonus
-
 
     def to_pay(self):
         return self.__salary + self.bonus
@@ -48,11 +41,9 @@ class SalesPerson(Employee):
         self.__percent = percent
         self.__bonus = 0
 
-
     @property
     def bonus(self):
         return self.__bonus
-
 
     @bonus.setter
     def bonus(self, bonus):
@@ -70,11 +61,9 @@ class Manager(Employee):
         self.__client_number = client_number
         self.__bonus = 0
 
-
     @property
     def bonus(self):
         return self.__bonus
-
 
     @bonus.setter
     def bonus(self, bonus):
@@ -95,11 +84,9 @@ class Company:
                 if isinstance(arg, Employee):
                     self.__employees.append(arg)
 
-
     @property
     def employees(self):
         return self.__employees
-
 
     def give_everybody_bonus(self, company_bonus):
         for employee in self.__employees:
@@ -107,7 +94,6 @@ class Company:
 
     def total_to_pay(self):
         return sum(employee.to_pay() for employee in self.__employees)
-
 
     def name_max_salary(self):
         maxs = -1
@@ -117,8 +103,6 @@ class Company:
                 maxs = employee.to_pay()
                 name = employee.name
         return name
-
-
 
 # a = SalesPerson('Alex', 10, 50)
 # b = SalesPerson('Victor', 10, 150) # *2=300

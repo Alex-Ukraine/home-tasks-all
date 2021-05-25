@@ -18,7 +18,7 @@ For [15, 10, 3] and “descending” sort order the values in the array are chan
 Note:
 Raise TypeError in case of wrong function arguments data type;
 """
-#class Enum:
+# class Enum:
 #    pass
 
 from enum import Enum
@@ -45,6 +45,7 @@ def is_sorted(num_list: List[int], sort_order: SortOrder) -> bool:
             last = item
     return True
 
+
 def check_data_type(num_list: List[int], sort_order: SortOrder):
     if not (isinstance(num_list, list) and isinstance(sort_order, SortOrder)):
         raise TypeError
@@ -62,6 +63,6 @@ def transform(num_list: List[int], sort_order: SortOrder) -> List[int]:
             result[index] += index
     return result
 
-#print(transform([5, 17, 24, 88], ''))
-#print(transform(['', 5, 17, 24, 88], SortOrder.ASC))
-#print(transform([5, 17, 24, 24], SortOrder.ASC))
+# print(transform([5, 17, 24, 88], ''))
+# print(transform(['', 5, 17, 24, 88], SortOrder.ASC))
+# print(transform([5, 17, 24, 24], SortOrder.ASC))

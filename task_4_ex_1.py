@@ -6,15 +6,15 @@ Usage of any replacing string functions is prohibited.
 
 
 def swap_quotes(string: str) -> str:
-    res=[]
+    res = []
     for char in string:
-        if char=="'":
+        if char == "'":
             res.append("\"")
-        elif char=="\"":
+        elif char == "\"":
             res.append("'")
         else:
             res.append(char)
     return "".join(res)
 
-#print("ftyftyj'ftyjftyjftyj\"")
-#print(swap_quotes("ftyftyj'ftyjftyjftyj\""))
+# print("ftyftyj'ftyjftyjftyj\"")
+# print(swap_quotes("ftyftyj'ftyjftyjftyj\""))

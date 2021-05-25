@@ -5,6 +5,7 @@ def remember_result(fn):
         else:
             print(f"Last result = '{None}'")
         prev.append(fn(*args))
+
     return wrapper
 
 

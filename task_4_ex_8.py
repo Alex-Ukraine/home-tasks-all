@@ -18,15 +18,16 @@ None
 
 
 def get_pairs(lst: list) -> list:
-    res=[]
-    last=None
-    if len(lst)>1:
+    res = []
+    last = None
+    if len(lst) > 1:
         for item in lst:
             if last:
                 res.append((last, item))
-            last=item
+            last = item
         return res
     else:
         return None
+
 
 print(get_pairs(['need', 'to', 'sleep', 'more']))

@@ -12,7 +12,7 @@ Example:
 
 
 def fibonacci_loop(seq):
-    line=[]
+    line = []
     for item in seq:
         if type(item) is str:
             break
@@ -21,4 +21,4 @@ def fibonacci_loop(seq):
 
     print(' '.join(line))
 
-#fibonacci_loop([0, 1, 1.1, 1, 2, 99.9, 3, 0.0, 5, 8, "stop", 13, 21, 34])
+# fibonacci_loop([0, 1, 1.1, 1, 2, 99.9, 3, 0.0, 5, 8, "stop", 13, 21, 34])
